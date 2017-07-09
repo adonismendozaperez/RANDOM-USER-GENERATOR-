@@ -17,3 +17,31 @@ textarea {
     max-width: 280px;
 }
 
+.profile {
+    margin-top: 80px;
+}
+
+.text-capitalize{
+    text-transform:capitalize;
+}
+
+span{
+    padding-left:10px;
+}
+
+.table-borderless thead > tr > th,
+.table-borderless tbody > tr > th, 
+.table-borderless tfoot > tr > th, 
+.table-borderless thead > tr > td, 
+.table-borderless tbody > tr > td, 
+.table-borderless tfoot > tr > td {
+    border: none;
+}
+
+#button{
+    margin-top: 17px;
+}
+
+h1 small{
+    font-size:17px;
+}
