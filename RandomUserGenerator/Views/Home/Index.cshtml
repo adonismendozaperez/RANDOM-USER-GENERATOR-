@@ -5,29 +5,34 @@
 @*<center>
     <h2>RANDOM USER GENERATOR</h2>
 </center>*@
+<style>
+    .box-header {
+        border-top: 2px solid;
+    }
+body{
+    text-align: center;
+}
+</style>
 
 <br />
 <br />
 <br />
 
 <main>
-    <ul v-for="persona in personas">
+    <div class="panel panel-primary">
+        
 
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        <center>
-                            <img v-bind:src="persona.picture.thumbnail" alt="">
-                            <br />
-                            Hello, My Name is: {{persona.name.first}} {{persona.name.last}}
-                        </center>
-                        
-        </h3>
-        </div>
-        <div class="panel-body">
+        <ul v-for="persona in personas">
+            <div class="panel-heading">
 
-            <center>
-                
+                <h3 class="panel-title">
+                    <img v-bind:src="persona.picture.thumbnail" alt="">
+                    <br />
+                    Hello, My Name is: {{persona.name.first}} {{persona.name.last}}
+                </h3>
+        
+</div>
+            <div class="panel-body">
                 <br>
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 My email address is: {{persona.email}}
@@ -49,20 +54,20 @@
                 <br />
                 <i class="fa fa-users" aria-hidden="true"></i>
                 My nationality is : {{persona.nat}}
-            </center>
-        </div>
-        </div>
+
+            </div>
 
 
 
-    </ul>
-    <center>
+
+        </ul>
+    </div>
         <a class="btn btn-default" href="#" onclick="javascript:window.location.reload();">
             <i class="fa fa-refresh fa-spin fa-fw"></i>refresh
         </a>
       
-    </center>
-  
+ 
+
 
     @*<pre>{{$data}}</pre>*@
 </main>
